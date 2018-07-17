@@ -3,7 +3,6 @@ body {
 	padding: 0;
 	min-width: 960px;
 
-	font-weight: 700px;
 	font-size: 14px;
 	line-height: 24px;
 	font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -16,9 +15,32 @@ body {
 	background-color: #090909;
 }
 
+.button {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 140px;
+	padding: 10px 0;
+
+	font: inherit;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	
+	border: none;
+	background-color: #000000;
+}
+
+.section-title {
+	margin: 0;	
+	padding-top: 44px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
 .visually-hidden {
 	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px 1px 1px 1px);
 	clip: rect(1px, 1px, 1px, 1px);
 	padding:0 !important;
 	border:0 !important;
@@ -73,7 +95,8 @@ body {
 	padding: 0;
 	margin: 0;
 	display: flex;
-	width: 240px;
+	justify-content: flex-end;
+	width: 220px;
 
 	list-style: none;
 }
@@ -148,8 +171,8 @@ body {
 
 .feature-title::after {
 	position: absolute;
-	top: 53px;
-	left: 139px;
+	top: 50%;
+	left: 46.5%;
 	
 	width: 20px;
 	height: 20px;
@@ -173,8 +196,11 @@ body {
 
 .news {
 	position: relative;
-
+	display: flex;
+	flex-direction: column;
 	padding-right: 42px;
+	padding-left: 80px;
+	padding-bottom: 50px;
 	min-height: 420px;
 	width: 471px;
 	box-sizing: border-box;
@@ -194,3 +220,79 @@ body {
 	background-image: url("../img/decor-line.png");
 	background-repeat: no-repeat;
 }
+
+.news-list {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+.news-item:first-child p {
+	margin-top: 17px;
+
+}
+
+.news-item p {
+	margin: 0;
+	margin-top: 20px;
+}
+
+.news-item time {
+	text-transform: none;
+}
+
+.news-item time {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.news-button {
+	margin-top: auto;
+} 
+
+/* Gallery section */
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	min-height: 420px;
+	padding-bottom: 50px;
+	width: 380px;
+	box-sizing: border-box;
+
+}
+
+.gallery .section-title {
+	margin-bottom: 32px;
+}
+
+.gallery figure {
+	box-sizing: border-box;
+	width: 300px;
+	height: 178px;
+	margin: 0;
+
+	border: 7px solid #ffffff;
+}
+
+.gallery figure a {
+	display: block;
+	width: 286px;
+	height: 164px;
+}
+
+.gallery img {
+	width: 286px;
+	height: 164px;
+}
+
+.news-buttons {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	margin-top: auto;
+}
+
+/* Contact-info section */
