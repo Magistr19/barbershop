@@ -10,89 +10,97 @@
 <body>
 	<header class="main-header">
 		<nav class="main-nav">
-			<a class="main-logo"><img src="" alt="Логотип" width="371" height="155"></a>
-				<ul class="site-nav">
-					<li><a href="information.html">Информация</a></li>
-					<li><a href="news.html">Новости</a></li>
-					<li><a href="price-list.html">Прайс-лист</a></li>
-					<li><a href="shop.html">Магазин</a></li>
-					<li><a href="contacrs.html">Контакты</a></li>
-				</ul>
-				<ul class="user-nav">
-					<li><a href="#">Вход</a></li>
-				</ul>
+			<a class="main-logo"><img src="img/index-logo.svg" alt="Логотип" width="371" height="155"></a>
+			<div class="wrapper-header">
+				<div class="container">
+					<ul class="site-nav">
+						<li><a href="information.html">Информация</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="price-list.html">Прайс-лист</a></li>
+						<li><a href="shop.html">Магазин</a></li>
+						<li><a href="contacrs.html">Контакты</a></li>
+					</ul>
+					<ul class="user-nav">
+						<li><a href="#">Вход</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
 
-	<main class="container">
-		<h1 class="visually-hiden">Барбершоп "Бородинский"</h1>
+	<main class="index-main">
+		<div class="container">
+			<h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
 
-		<section class="features">
-			<h2 class="visually-hiden">Преимущества</h2>
-			<ul class="feature-list">
-				<li class="feature-item">
-					<h3 class="feature-title">Быстро</h3>
-					<p class="feature-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
-				</li>
-				<li class="feature-item">
-					<h3 class="feature-title">Круто</h3>
-					<p class="feature-description">Забудьте, как вы стриглись раньше.
-					Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-				</li>
-				<li class="feature-item">
-					<h3 class="feature-title">Дорого</h3>
-					<p class="feature-description">Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
-				</li>
-			</ul>
-		</section>
+			<section class="features">
+				<h2 class="visually-hidden">Преимущества</h2>
+				<ul class="feature-list">
+					<li class="feature-item">
+						<h3 class="feature-title">Быстро</h3>
+						<p class="feature-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+					</li>
+					<li class="feature-item">
+						<h3 class="feature-title">Круто</h3>
+						<p class="feature-description">Забудьте, как вы стриглись раньше.
+						Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+					</li>
+					<li class="feature-item">
+						<h3 class="feature-title">Дорого</h3>
+						<p class="feature-description">Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+					</li>
+				</ul>
+			</section>
+				
+			<div class="index-sections-wrapper">
+				<section class="news">
+					<h2 class="section-title">Новости</h2>
+					<ul class="news-list">
+						<li class="news-item">
+							<p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+							<time datetime="2018-01-11">11 января</time>
+						</li>
+						<li class="news-item">
+							<p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+							<time datetime="2018-01-18">18 января</time>
+						</li>
+					</ul>
+					<a href="#" class="button news-button">Все новости</a>
+				</section>
 
-		<section class="news">
-			<h2 class="section-title">Новости</h2>
-			<ul class="news-list">
-				<li class="news-item">
-					<p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-					<time datetime="2018-01-11">11 января</time>
-				</li>
-				<li class="news-item">
-					<p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
-					<time datetime="2018-01-18">18 января</time>
-				</li>
-			</ul>
-			<a href="#" class="button news-button">Все новости</a>
-		</section>
+				<section class="gallery">
+					<h2 class="section-title">Фотогалерея</h2>
+					<figure>
+						<a href="#"><img src="" alt="Интерьер"></a>
+					</figure>
+					<button class="button next-button">Назад</button>
+					<button class="button previous-button">Вперед</button>
+				</section>
+			</div>
+			
+			<section class="contact-info">
+				<h2 class="section-title">Контактная информация</h2>
+				<p class="contact-info">Барбершоп «бородинский»<br>
+				Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8<br>
+				Телефон: +7 (495) 666-02-66</p>
+				<p class="graphic-of-work">Время работы:<br>
+				пн—пт: с 10:00 до 22:00<br>
+				сб—вс: с 10:00 до 19:00</p>
+				<a href="#" class="button how-to-find-button">Как проехать</a>
+				<a href="#" class="button feed-back-button">Обратная связь</a>
+			</section>
 
-		<section class="gallery">
-			<h2 class="section-title">Фотогалерея</h2>
-			<figure>
-				<a href="#"><img src="" alt="Интерьер"></a>
-			</figure>
-			<button class="button next-button">Назад</button>
-			<button class="button previous-button">Вперед</button>
-		</section>
-
-		<section class="contact-info">
-			<h2 class="section-title">Контактная информация</h2>
-			<p class="contact-info">Барбершоп «бородинский»<br>
-			Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8<br>
-			Телефон: +7 (495) 666-02-66</p>
-			<p class="graphic-of-work">Время работы:<br>
-			пн—пт: с 10:00 до 22:00<br>
-			сб—вс: с 10:00 до 19:00</p>
-			<a href="#" class="button how-to-find-button">Как проехать</a>
-			<a href="#" class="button feed-back-button">Обратная связь</a>
-		</section>
-
-		<section class="appointment">
-			<h2 class="section-title">Записаться</h2>
-			<p class="appointment-tip">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-			<form action="">
-				<!-- Форма -->
-			</form>
-		</section>
-
+			<section class="appointment">
+				<h2 class="section-title">Записаться</h2>
+				<p class="appointment-tip">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+				<form action="">
+					<!-- Форма -->
+				</form>
+			</section>
+		</div>
 	</main>
 
 	<footer class="main-footer">
+		<div class="container">
 			<p class="footer-info">Барбершоп «Бородинский»<br>
 			Адрес: г. Санкт-петербург, ул. Б. Конюшенная, д. 19/8<br>
 			<a href="#">Как нас найти</a><br>
@@ -110,6 +118,7 @@
 			<p class="copyright">Разработано:
 				<a href="#" class="button copyright-button">HTML ACADEMY</a>
 			</p>
+		</div>
 	</footer>
 </body>
 </html>
