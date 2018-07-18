@@ -58,12 +58,16 @@ body {
 .index-sections-wrapper {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 36px;
 
 	background-image: url("../img/white-bg.jpg");
 	background-repeat: repeat;
 	background-color: #f8f5f2;
 }
 
+.index-sections-wrapper:last-child {
+		margin-bottom: 65px;
+}
 
 /* Index-header */
 
@@ -296,3 +300,26 @@ body {
 }
 
 /* Contact-info section */
+
+.contact-info {
+	position: relative;
+	box-sizing: border-box;
+	width: 470px;
+	padding-right: 69px;
+	padding-left: 80px;
+}
+
+.contact-info::after {
+	position: absolute;
+	right: 0;
+	top: 64px;
+	
+	display: block;
+	width: 8px;
+	height: 278px;
+
+	content: "";
+
+	background-image: url("../img/decor-line.png");
+	background-repeat: no-repeat;
+}
