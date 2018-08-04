@@ -94,19 +94,19 @@
 					<form action="#" method="post">
 						<p class="appointment-group">
 							<label for="date">Дата</label>
-							<input id="date" type="text" class="date-field" placeholder="08.10.2017">
+							<input id="date" type="text" name="date-field" placeholder="08.10.2017">
 						</p>
 						<p class="appointment-group">
 							<label for="time">Время</label>
-							<input id="time" type="text" class="time-field" placeholder="10:00">
+							<input id="time" type="text" name="time-field" placeholder="10:00">
 						</p>
 						<p class="appointment-group">
 							<label for="name">Ваше имя</label>
-							<input id="name" type="text" class="name-field" placeholder="Борода">
+							<input id="name" type="text" name="name-field" placeholder="Борода">
 						</p>
 						<p class="appointment-group">
 							<label for="tel">Телефон</label>
-							<input id="tel" type="tel" class="tel-field" placeholder="+7 123 456-78-90">
+							<input id="tel" type="tel" name="tel-field" placeholder="+7 123 456-78-90">
 						</p>
 						<button class="button appointment-button" type="submit">Отправить</button>
 					</form>
@@ -118,7 +118,7 @@
 		<div class="container">
 			<p class="footer-info">Барбершоп «Бородинский»<br>
 			Адрес: г. Санкт-петербург, ул. Б. Конюшенная, д. 19/8<br>
-			<a href="#">Как нас найти</a><br>
+			<a class="how-to-find" href="#">Как нас найти</a><br>
 			Телефон: +7 (495) 666-02-66</p>
 			<div class="social">
 				<b>Давайте дружить!</b>
@@ -148,5 +148,32 @@
 			</p>
 		</div>
 	</footer>
+	<section class="modal-login modal">
+		<h2 class="section-title">Личный кабинет</h2>
+		<p class="login-tip">Введите пожалуйста свой логин и пароль</p>
+		<form class="login-form" action="#" method="post">
+			<label class="visually-hidden" for="login">Ваш логин:</label>
+			<input  type="text" name="login-field" id="login" placeholder="Логин" autofocus>
+			<label class="visually-hidden" for="password">Ваш пароль:</label>
+			<input type="password" name="password-field" id="password" placeholder="Пароль">
+			<p class="login-group">
+				<label>
+					<input class="visually-hidden" type="checkbox">Запомнить меня
+					<span class="check-mark"><span class="visually-hidden">Чекбокс</span></span>
+				</label>
+				<a class="forgot-pass" href="#">Я забыл пароль</a>
+			</p>
+			<button class="button login-button" type="submit">Войти</button>
+		</form>
+		<button class="close-button"><span class="visually-hidden">Закрыть окно</span></button>
+	</section>
+	<section class="modal-map modal">
+		<h2 class="visually-hidden">Мы на карте:</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5987804598287!2d30.32148470237968!3d59.93879955621634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1533421878967" width="766" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<img src="img/map.jpg" alt="Большая Конюшенная ул.,19" width="766" height="560">
+		<button class="close-button"><span class="visually-hidden">Закрыть окно</span></button>
+	</section>
+	<div class="overlay"></div>
+	<script src="js/script.js"></script>
 </body>
 </html>
