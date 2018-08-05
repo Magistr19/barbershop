@@ -28,7 +28,7 @@ if (isStorageSupport) {
 
 loginLink.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	popUpLogin.classList.add("modal-show");
+	popUpLogin.classList.add("modal-show","modal-login-show");
 	overLay.classList.add("modal-show");
 	if (!loginStorage || rememberStorage == '0') {
 		inputLogin.focus();
@@ -43,6 +43,11 @@ loginLink.addEventListener("click", function (evt) {
 });
 
 loginForm.addEventListener("submit", function (evt) {
+	if(!inputLogin.value || !inputPassword.value) {
+		evt.preventDefault();
+		popUpLogin.classList.remove("modal-login-show");
+		popUpLogin.classList.toggle("login-invalid");
+	}
 	if (isStorageSupport && loginCheckBox.checked) {
 		localStorage.setItem ("login", inputLogin.value);
 		localStorage.setItem ("rememberMe", 1);

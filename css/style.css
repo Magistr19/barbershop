@@ -630,13 +630,12 @@ body {
 	min-height: 385px;
 	padding-left: 80px;
 	padding-right: 80px;
-	
+	margin-top: -193px;
+	margin-left: -230px;
 
 	background-color: #f8f5f2;
 	background-image: url("../img/white-bg.jpg");
 	box-shadow: 0 30px 50px 15px rgba(0, 1, 1, 0.75);
-
-	transform: translate(-50%, -50%);
 }
 
 
@@ -784,6 +783,37 @@ body {
 	background-color: #d0d0d0;
 
 	transform: rotate(45deg);
+}
+
+@keyframes shake {
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80%, 100% {
+		transform: translateX(10px);
+	}
+}
+
+.login-invalid {
+	animation-name: shake;
+	animation-duration: 0.8s;
+}
+
+@keyframes modal-up-down {
+	0% {
+		transform: translateY(-1000px);
+	}
+	80% {
+		transform: translateY(40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.modal-login-show {
+	animation-name: modal-up-down;
+	animation-duration: 0.8s;
 }
 
 /* Modal map */
